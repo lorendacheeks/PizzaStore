@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZAze Pizza Parlor</title>
+</head>
+<body style="background-color: rgb(209, 159, 83);">
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="rewards.html">PIZZAze Rewards</a></li>
+      <li><a href="https://www.medicalnewstoday.com/articles/323319">Health Benefits of Vegetables</a></li>
+      <li><a href="form.html">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <h1>Pizzaze Rewards</h1>
+  <P>The Pizza Parlor is proud to introduce its Pizza Rewards Program, designed to show appreciation to our loyal customers who make our journey so meaningful. With every dollar spent, guests earn one reward point, bringing them closer to delicious perks with each visit. Accumulated points can be redeemed for exciting benefits like free toppings (50 points), a complimentary drink or dessert (75 points), and even a free specialty pizza (150 points). Members will also receive exclusive birthday rewards, early access to new menu items, and surprise bonus point days. Signing up is easy, and every slice brings you closer to something special. At the Pizza Parlor, we believe loyalty should be rewarded—one tasty bite at a time!</P>
+
+  <form action="#" id="myForm">
+ 
+</head>
+<body>
+    <div class="form-container">
+        <h2>Join Our Rewards Program</h2>
+        <form id="signup-form">
+          <input type="text" id="name" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="password" id="password" placeholder="Create Password" required>
+          <button type="submit">Create Account</button>
+        </form>
+        <div class="message" id="message"></div>
+      </div>
+    
+      <script>
+        document.getElementById('signup-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+
+          console.log('Account Created:', { name, email, password });
+    
+          const message = document.getElementById('message');
+          message.textContent = `Welcome, ${name}! You're now earning 1 point per $1 spent. Redirecting to home...`;
+    
+          document.getElementById('signup-form').reset();
+    
+          setTimeout(() => {
+            window.location.href = 'index.html'; 
+          }, 3000);
+        });
+      </script>
+
+  <footer>
+    <img src="images/banner.jpg" alt="Banner convincing you to Pizzaze Your Health" width="870" height="150">
+</footer>
+
+</body>
+</html>
