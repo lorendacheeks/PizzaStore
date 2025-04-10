@@ -1,1 +1,1 @@
-The PizzaStore projects displays skills with html and css.
+A modern, HTML-based healthy pizza ordering website featuring customizable pizza options, clean navigation, and educational links—all built by an entry-level developer focused on user experience and wellness-driven design.
